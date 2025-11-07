@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // MongoDB Connection - USE YOUR ACTUAL CONNECTION STRING HERE!
-const MONGODB_URI = 'mongodb+srv://user:dsgp1234@cluster0.tvqmr5y.mongodb.net/?appName=Cluster0';
+const MONGODB_URI = 'mongodb+srv://Vercel-Admin-vege-craze-quiz:qRw8LobYdMjUgnIe@vege-craze-quiz.ogmajx4.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -194,4 +194,5 @@ app.use('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`🌱 The Great Veggie Survey API is ready!`);
+
 });
