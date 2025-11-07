@@ -538,7 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Data submission function
     async function submitSurveyData(data) {
         try {
-            const response = await fetch('https://vege-craze-quiz-gfs9xsc4b-yasaswinirupakkumars-projects.vercel.app/', {
+            const response = await fetch('/api/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -1014,4 +1014,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupCardSelections();
 });
+
 
