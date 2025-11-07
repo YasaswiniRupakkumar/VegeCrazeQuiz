@@ -15,8 +15,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files (like index.html)
-app.use(express.static('public'));
+// Serve static files from the root directory (where index.html is located)
+app.use(express.static(__dirname)); // Serve static files from the root directory
 
 // MongoDB Connection - USE YOUR ACTUAL CONNECTION STRING HERE!
 const MONGODB_URI = 'mongodb+srv://Vercel-Admin-vege-craze-quiz:qRw8LobYdMjUgnIe@vege-craze-quiz.ogmajx4.mongodb.net/?retryWrites=true&w=majority';
@@ -82,7 +82,7 @@ const SurveyResponse = mongoose.model('SurveyResponse', surveyResponseSchema);
 
 // Routes
 app.get('/', (req, res) => {
-  res.sendFile('index.html', { root: 'public' }); // Serve index.html explicitly
+  res.sendFile('index.html', { root: __dirname }); // Serve index.html from the root directory
 });
 
 // Submit survey response
@@ -204,5 +204,6 @@ app.listen(PORT, () => {
   console.log(`🌱 The Great Veggie Survey API is ready!`);
 
 });
+
 
 
