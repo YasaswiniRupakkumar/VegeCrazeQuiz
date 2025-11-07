@@ -23,6 +23,10 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from the root directory (where index.html is located)
 app.use(express.static(__dirname)); // Serve static files from the root directory
+app.use(express.static(path.join(__dirname, 'Town')));  // For image files
+app.use(express.static(path.join(__dirname, 'Vegetables')));  // For image files
+app.use(express.static(path.join(__dirname, 'markets')));  // For image files
+app.use(express.static(path.join(__dirname, 'people')));  // For image files
 
 // MongoDB Connection - USE YOUR ACTUAL CONNECTION STRING HERE!
 const MONGODB_URI = 'mongodb+srv://Vercel-Admin-vege-craze-quiz:qRw8LobYdMjUgnIe@vege-craze-quiz.ogmajx4.mongodb.net/?retryWrites=true&w=majority';
@@ -201,6 +205,7 @@ app.listen(PORT, () => {
   console.log(`🌱 The Great Veggie Survey API is ready!`);
 
 });
+
 
 
 
