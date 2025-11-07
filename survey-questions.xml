@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey>
+    <languages>
+        <language code="english">
+            <questions>
+                <question id="age-group">What's your age group?</question>
+                <question id="role-selection">Household Size</question>
+                <question id="income">Approximate Monthly Household Income (LKR)</question>
+                <question id="veggie-selection">Favorite Vegetables (Choose up to 5)</question>
+                <question id="buying-location">Where do you MOST FREQUENTLY buy your fresh vegetables?</question>
+                <question id="purchase-frequency">How often does your household purchase fresh vegetables?</question>
+                <question id="spending-amount">On average, how much does your household spend on vegetables per week (LKR)?</question>
+                <question id="core-problem">Section 1</question>
+                <question id="solution-interest">Section 2</question>
+                <question id="usage-context">Section 3</question>
+                <question id="decision-making">Section 4</question>
+                <question id="prototype-testing">Bonus Question</question>
+                <question id="open-feedback">Do you have any other comments on the availability, price, or quality of vegetables in your area?</question>
+                
+                <!-- Age Group Options -->
+                <option id="under-25">Under 25</option>
+                <option id="25-35">25 - 35</option>
+                <option id="36-45">36 - 45</option>
+                <option id="46-55">46 - 55</option>
+                <option id="55-plus">55+</option>
+                
+                <!-- Household Size Options -->
+                <option id="1-2">1-2 persons</option>
+                <option id="3-4">3-4 persons</option>
+                <option id="5-6">5-6 persons</option>
+                <option id="6+">6+ persons</option>
+                
+                <!-- Income Options -->
+                <option id="less than 50000">Less than 50,000</option>
+                <option id="50,000 - 100,000">50,000 - 100,000</option>
+                <option id="100,000 - 150,000">100,000 - 150,000</option>
+                <option id="150,000 - 200,000">150,000 - 200,000</option>
+                <option id="200,000 - 250,000">200,000 - 250,000</option>
+                
+                <!-- Vegetable Names -->
+                <option id="carrot">Carrot</option>
+                <option id="beetroot">Beetroot</option>
+                <option id="red-onion">Red Onion</option>
+                <option id="cabbage">Cabbage</option>
+                <option id="leeks">Leeks</option>
+                <option id="tomato">Tomato</option>
+                <option id="brinjal">Brinjal</option>
+                <option id="cucumber">Cucumber</option>
+                <option id="pumpkin">Pumpkin</option>
+                <option id="bitter-gourd">Bitter Gourd</option>
+                <option id="okra">Okra</option>
+                <option id="beans">Beans</option>
+                <option id="long-beans">Long Beans</option>
+                <option id="green-chili">Green Chili</option>
+                
+                <!-- Buying Location Options -->
+                <option id="vegetable-market">Dedicated Vegetable Market</option>
+                <option id="local-fair">Local Fair / Sunday Market</option>
+                <option id="supermarket">Supermarket</option>
+                <option id="grocery-store">Local Grocery Store</option>
+                <option id="farmer">Directly from Farmer</option>
+                <option id="online">Online Delivery Services</option>
+                
+                <!-- Purchase Frequency Options -->
+                <option id="daily">Daily</option>
+                <option id="2-3-times">2-3 times a week</option>
+                <option id="weekly">Weekly</option>
+                <option id="less-than-weekly">Less than once a week</option>
+                
+                <!-- Spending Amount Options -->
+                <option id="less-than-1000">Less than 1,000</option>
+                <option id="1001-2500">1,000 - 2,500</option>
+                <option id="2501-5000">2,500 - 5,000</option>
+                <option id="more-than-5000">More than 5,000</option>
+                
+                <!-- Page 3 Questions -->
+                <question id="unstable-vege-price">1. Which 3 - 5 vegetables do you think have the most unstable prices?</question>
+                <question id="price-effect">2. How often do unexpected vegetable price changes affect your budget?</question>
+                <question id="price-response">3. When vegetable prices unexpectedly increase, how do you typically respond? (Choose all that apply)</question>
+                <question id="budget-difficulty">4. Does the fluctuation in vegetable prices make it difficult for you to stay within your monthly budget?</question>
+                <question id="purchase-adjustment">5. How do you manage or adjust your vegetable purchases when prices rise unexpectedly?</question>
+
+                <!-- Price Response Options -->
+                <option id="buy-smaller">Buy smaller quantities</option>
+                <option id="switch-cheaper">Switch to cheaper vegetables</option>
+                <option id="reduce-consumption">Reduce consumption</option>
+                <option id="no-change">No change</option>
+                
+                <!-- Budget Difficulty Options -->
+                <option id="yes-always">Yes, always</option>
+                <option id="yes-sometimes">Yes, sometimes</option>
+                <option id="no-manage">No, I can manage</option>
+                <option id="no-never">No, never</option>
+                
+                <!-- Purchase Adjustment Options -->
+                <option id="cut-back">Cut back on vegetable purchases</option>
+                <option id="spend-less-other">Spend less on other groceries to balance</option>
+                <option id="cheaper-alternatives">Use cheaper alternatives</option>
+                <option id="other">Other</option>
+                
+                <!-- Page 4 Questions -->
+                <question id="price-forecast-useful">6. Would you find it useful to have a mobile app or platform that forecasts vegetable prices for the next 7 days?</question>
+                <question id="budget-recommendation">7. Would you be interested in an app that recommends which vegetables to buy based on your budget and nutritional needs?</question>
+                <question id="recipe-suggestions">8. Would you use recipe suggestions based on seasonal or affordable vegetables?</question>
+                <question id="smartphone-ownership">9. Do you own a smartphone or mobile device?</question>
+                <question id="app-comfort">10. How comfortable are you with using mobile apps or websites?</question>
+                <question id="decision-factors">11. How do you typically decide which vegetables to buy or sell? (Choose top 2)</question>
+                <question id="forecast-useful">12. How far in advance would you find vegetable price forecasts most useful?</question>
+                <question id="motivation-factors">13. What would most motivate you to use an app that predicts vegetable prices and suggests recipes? (Choose top 2)</question>
+                <question id="app-likely">14. How likely would you be to use a free app that includes price forecasts, nutritional suggestions, and recipes?</question>
+                <question id="prototype-interest">15. Would you be interested in testing a prototype or beta version of an app that predicts vegetable prices and suggests recipes?</question>
+
+                <!-- Price Forecast Useful Options -->
+                <option id="very-useful">Very useful</option>
+                <option id="useful">Useful</option>
+                <option id="somewhat-useful">Somewhat useful</option>
+                <option id="not-useful">Not useful</option>
+                
+                <!-- Budget Recommendation Options -->
+                <option id="very-interested">Very interested</option>
+                <option id="interested">Interested</option>
+                <option id="neutral">Neutral</option>
+                <option id="not-interested">Not interested</option>
+                
+                <!-- Recipe Suggestions Options -->
+                <option id="yes-definitely">Yes, definitely</option>
+                <option id="probably">Probably</option>
+                <option id="maybe">Maybe</option>
+                <option id="no">No</option>
+                
+                <!-- Smartphone Ownership Options -->
+                <option id="smartphone">Yes, Smartphone (Android or iPhone)</option>
+                <option id="basic-phone">Yes, Basic/Feature phone</option>
+                <option id="no-phone">No phone</option>
+                
+                <!-- App Comfort Options -->
+                <option id="very-comfortable">Very comfortable</option>
+                <option id="comfortable">Comfortable</option>
+                <option id="neutral">Neutral</option>
+                <option id="uncomfortable">Uncomfortable</option>
+                
+                <!-- Decision Factors Options -->
+                <option id="current-prices">Based on current prices</option>
+                <option id="family-preferences">Family preferences / Customer demand</option>
+                <option id="nutritional-value">Nutritional value</option>
+                <option id="seasonal-availability">Seasonal availability</option>
+                <option id="no-specific-plan">No specific plan</option>
+                
+                <!-- Forecast Useful Options -->
+                <option id="1-2-days">1-2 days</option>
+                <option id="3-7-days">3-7 days</option>
+                <option id="1-2-weeks">1-2 weeks</option>
+
+                <!-- Increased Price Option Id -->
+                <option id="always">Always</option>
+                <option id="frequently">Frequently</option>
+                <option id="sometimes">Sometimes</option>
+                <option id="rarely">Rarely</option>
+                <option id="never">Never</option>
+
+                <!-- Motivation Factors Options -->
+                <option id="saving-money">Saving money</option>
+                <option id="better-meal-planning">Better meal planning</option>
+                <option id="nutritional-benefits">Nutritional benefits</option>
+                <option id="time-savings">Time savings</option>
+                
+                <!-- App Likely Options -->
+                <option id="very-likely">Very likely</option>
+                <option id="likely">Likely</option>
+                <option id="neutral">Neutral</option>
+                <option id="unlikely">Unlikely</option>
+                
+                <!-- Prototype Interest Options -->
+                <option id="yes">Yes</option>
+                <option id="maybe">Maybe</option>
+                <option id="no">No</option>
+            </questions>
+        </language>
+        
+        <language code="sinhala">
+            <questions>
+                <question id="age-group">ඔබගේ වයස් කාණ්ඩය කුමක්ද?</question>
+                <question id="role-selection">ඔබේ නිවසේ සාමාජිකයන් ගණන කීයද?</question>
+                <question id="income">දළ වශයෙන් මාසික ගෘහස්ථ ආදායම ?</question>
+                <question id="veggie-selection">ප්‍රියතම එළවළු (උපරිම 5ක් තෝරන්න)</question>
+                <question id="buying-location">ඔබ බොහෝ විට නැවුම් එළවළු මිලදී ගන්නේ කොහෙන්ද?</question>
+                <question id="purchase-frequency">ඔබ නැවුම් එළවළු මිලදී ගන්නේ කොපමණ කාලයකට වාරයක්ද?</question>
+                <question id="spending-amount">සාමාන්‍යයෙන්, ඔබ සතියකට එළවළු සඳහා වැය කරන මුදල (රුපියල්) කොපමණද?</question>
+                <question id="core-problem">කොටස 1</question>
+                <question id="solution-interest">කොටස 2</question>
+                <question id="usage-context">කොටස 3</question>
+                <question id="decision-making">කොටස 4</question>
+                <question id="prototype-testing">අතිරේක ප්‍රශ්නය</question>
+                <question id="open-feedback">ඔබේ ප්‍රදේශයේ එළවළු ලබා ගත හැකියාව, මිල හෝ ගුණාත්මකභාවය පිළිබඳ වෙනත් අදහස් තිබේද?</question>
+                
+                <!-- Age Group Options -->
+                <option id="under-25">25 ට අඩු</option>
+                <option id="25-35">25 - 35</option>
+                <option id="36-45">36 - 45</option>
+                <option id="46-55">46 - 55</option>
+                <option id="55-plus">55+</option>
+                
+                <!-- Household Size Options -->
+                <option id="1-2">1-2 දෙනෙක්</option>
+                <option id="3-4">3-4 දෙනෙක්</option>
+                <option id="5-6">5-6 දෙනෙක්</option>
+                <option id="6+">6+ දෙනෙක්</option>
+                
+                <!-- Income Options -->
+                <option id="less than 50000">50,000 ට අඩු</option>
+                <option id="50,000 - 100,000">50,000 - 100,000</option>
+                <option id="100,000 - 150,000">100,000 - 150,000</option>
+                <option id="150,000 - 200,000">150,000 - 200,000</option>
+                <option id="200,000 - 250,000">200,000 - 250,000</option>
+                
+                <!-- Vegetable Names -->
+                <option id="carrot">කැරට්</option>
+                <option id="beetroot">බීට්රූට්</option>
+                <option id="red-onion">රතු ලූනු</option>
+                <option id="cabbage">ගෝවා</option>
+                <option id="leeks">ලීක්ස්</option>
+                <option id="tomato">තක්කාලි</option>
+                <option id="brinjal">වම්බටු</option>
+                <option id="cucumber">පිපිඤ්ඤා</option>
+                <option id="pumpkin">වට්ටක්කා</option>
+                <option id="bitter-gourd">කරවිල</option>
+                <option id="okra">බණ්ඩක්කා</option>
+                <option id="beans">බෝංචි</option>
+                <option id="long-beans">මෑ කරල්</option>
+                <option id="green-chili">අමු මිරිස්</option>
+                
+                <!-- Buying Location Options -->
+                <option id="vegetable-market">ආර්ථික මධ්‍යස්ථානය</option>
+                <option id="local-fair">සති පොල</option>
+                <option id="supermarket">සුපිරි වෙළඳසැල</option>
+                <option id="grocery-store">ප්‍රාදේශීය සිල්ලර භාණ්ඩ වෙළඳසැල</option>
+                <option id="farmer">සෘජුවම ගොවියන්ගෙන්</option>
+                <option id="online">මාර්ගගතව ඇනවුම් කිරීම</option>
+                
+                <!-- Purchase Frequency Options -->
+                <option id="daily">දිනපතා</option>
+                <option id="2-3-times">සතියට 2-3 වතාවක්</option>
+                <option id="weekly">සතිපතා</option>
+                <option id="less-than-weekly">සතියකට වැඩි කාලයකට වරක්</option>
+                
+                <!-- Spending Amount Options -->
+                <option id="less-than-1000">1,000 ට අඩු</option>
+                <option id="1001-2500">1,000 - 2,500</option>
+                <option id="2501-5000">2,500 - 5,000</option>
+                <option id="more-than-5000">5,000 ට වැඩි</option>
+                
+                <!-- Page 3 Questions -->
+                <question id="unstable-vege-price">1. මේ එළවලු අතුරින් මිල ඉහල පහල යාමට වැඩිපුරම ඉඩ ඇති එලවලු තෝරන්න (3 - 5)</question>
+                <question id="price-effect">2. අනපේක්ෂිත එළවළු මිල වෙනස්වීම් ඔබේ අයවැයට හෝ ව්‍යාපාරයට බලපාන්නේ කෙසේද ?</question>
+                <question id="price-response">3. එළවළු මිල අනපේක්ෂිත ලෙස වැඩි වූ විට, ඔබ සාමාන්‍යයෙන් ප්‍රතිචාර දක්වන්නේ කෙසේද? (අදාළ සියල්ල තෝරන්න)</question>
+                <question id="budget-difficulty">4. එළවළු මිල වෙනස් වීම ඔබට මාසික අයවැය පවත්වා ගැනීම සඳහා දුෂ්කරයිද? (පාරිභෝගිකයන් සඳහා)</question>
+                <question id="purchase-adjustment">5. එළවළු මිල අනපේක්ෂිත ලෙස වැඩි වූ විට, ඔබ ඔබේ එළවළු මිලදී ගැනීම් කළමනාකරණය කරන්නේ කෙසේද ? (පාරිභෝගිකයන් සඳහා)</question>
+                
+                <!-- Price Response Options -->
+                <option id="buy-smaller">කුඩා ප්‍රමාණ මිලදී ගැනීම</option>
+                <option id="switch-cheaper">සාපේක්ෂව ලාභදායී එළවළු වෙත මාරු වීම</option>
+                <option id="reduce-consumption">පරිභෝජනය අඩු කිරීම</option>
+                <option id="no-change">වෙනසක් නැත</option>
+                
+                <!-- Budget Difficulty Options -->
+                <option id="yes-always">සැමවිටම</option>
+                <option id="yes-sometimes">සමහර විට</option>
+                <option id="no-manage">කලාතුරකින්</option>
+                <option id="no-never">කිසිදු අවස්ථාවක දී නැත </option>
+                
+                <!-- Purchase Adjustment Options -->
+                <option id="cut-back">එළවළු මිලදී ගැනීම් අඩු කිරීම</option>
+                <option id="spend-less-other">සමතුලිත කිරීම සඳහා වෙනත් ගෘහභාණ්ඩ මත අඩුවෙන් වියදම් කිරීම</option>
+                <option id="cheaper-alternatives">ලාභදායී විකල්ප භාවිතා කිරීම</option>
+                <option id="other">වෙනත්</option>
+                
+                <!-- Page 4 Questions -->
+                <question id="price-forecast-useful">6. ඉදිරි දින 7 සඳහා එළවළු මිල පුරෝකථනය කරන ජංගම යෙදුමක් හෝ  මාධ්‍යයක් තිබීම ඔබට ප්‍රයෝජනවත් වේද? </question>
+                <question id="budget-recommendation">7. ඔබේ අයවැය සහ පෝෂණ අවශ්‍යතා මත පදනම්ව එළවළු නිර්දේශ කරන යෙදුමක් ගැන ඔබ උනන්දුවක් දක්වනවාද?</question>
+                <question id="recipe-suggestions">8. ඍතුමය හෝ ලාභදායී එළවළු මත පදනම්ව ලබා දෙන වට්ටෝරු යෝජනා ඔබ භාවිතා කරයිද?</question>
+                <question id="smartphone-ownership">9. ඔබ සතුව සුහුරු දුරකථනයක් හෝ ජංගම උපකරණයක් තිබේද?</question>
+                <question id="app-comfort">10. ජංගම යෙදුම් හෝ වෙබ් අඩවි භාවිතා කිරීමේදී ඔබට කෙතරම් සුවපහසුද?</question>
+                <question id="decision-factors">11. ඔබ සාමාන්‍යයෙන් මිලදී ගත යුතු හෝ විකිණිය යුතු එළවළු තීරණය කරන්නේ කෙසේද? (සුදුසුම 2 තෝරන්න)</question>
+                <question id="forecast-useful">12. එළවළු මිල පුරෝකථන ඔබට වඩාත් ප්‍රයෝජනවත් වන්නේ කොපමණ කාලයකට පෙරද?</question>
+                <question id="motivation-factors">13. එළවළු මිල පුරෝකථනය කරන සහ වට්ටෝරු යෝජනා කරන යෙදුමක් භාවිතා කිරීමට ඔබව වැඩිපුරම පොළඹවන්නේ කුමක්ද? (සුදුසුම 2 තෝරන්න)</question>
+                <question id="app-likely">14. මිල පුරෝකථන, පෝෂණ යෝජනා සහ වට්ටෝරු ඇතුළත් යෙදුමක් නොමිලේ භාවිතා කිරීමට ඔබ කෙතරම් සම්භාවිතාවක් ඇතිද?</question>
+                <question id="prototype-interest">15. එළවළු මිල පුරෝකථනය කරන සහ වට්ටෝරු යෝජනා කරන යෙදුමකට ඔබ උනන්දු වේවිද?</question>
+
+                <!-- Price Forecast Useful Options -->
+                <option id="very-useful">ඉතා ප්‍රයෝජනවත්</option>
+                <option id="useful">ප්‍රයෝජනවත්</option>
+                <option id="somewhat-useful">තරමක් ප්‍රයෝජනවත්</option>
+                <option id="not-useful">ප්‍රයෝජනවත් නොවේ</option>
+                
+                <!-- Budget Recommendation Options -->
+                <option id="very-interested">ඉතා උනන්දුවක්</option>
+                <option id="interested">උනන්දුවක්</option>
+                <option id="neutral">උදාසීනයි</option>
+                <option id="not-interested">උනන්දුවක් නැත</option>
+                
+                <!-- Recipe Suggestions Options -->
+                <option id="yes-definitely">ඔව්, නිසැකවම</option>
+                <option id="probably">සමහර විට</option>
+                <option id="maybe">ප්‍රශ්නයක්</option>
+                <option id="no">නැත</option>
+                
+                <!-- Smartphone Ownership Options -->
+                <option id="smartphone">ඔව්,  සුහුරු දුරකථනය(Android හෝ iPhone)</option>
+                <option id="basic-phone">ඔව්, ජංගම දුරකථනය</option>
+                <option id="no-phone">දුරකථනයක් නැත</option>
+                
+                <!-- App Comfort Options -->
+                <option id="very-comfortable">ඉතා පහසු</option>
+                <option id="comfortable">පහසු</option>
+                <option id="neutral">උදාසීනයි</option>
+                <option id="uncomfortable">අපහසු</option>
+                
+                <!-- Decision Factors Options -->
+                <option id="current-prices">වර්තමාන මිල මත පදනම්ව</option>
+                <option id="family-preferences">පවුලේ මනාප / ගනුදෙනුකරු ඉල්ලුම</option>
+                <option id="nutritional-value">පෝෂණ වටිනාකම</option>
+                <option id="seasonal-availability">සෘතුමය ලබා ගත හැකියාව</option>
+                <option id="no-specific-plan">නිශ්චිත සැලැස්මක් නැත</option>
+                
+                <!-- Forecast Useful Options -->
+                <option id="1-2-days">1-2 දින</option>
+                <option id="3-7-days">3-7 දින</option>
+                <option id="1-2-weeks">1-2 සති</option>
+
+                <!-- Increased Price Option Id -->
+                <option id="always">සැමවිටම</option>
+                <option id="frequently">නිතර</option>
+                <option id="sometimes">සමහරවිට</option>
+                <option id="rarely">කලාතුරකින්</option>
+                <option id="never">කවදාවත් නැත</option>
+
+                <!-- Motivation Factors Options -->
+                <option id="saving-money">මුදල් ඉතිරි කිරීම</option>
+                <option id="better-meal-planning">වඩා හොඳ ආහාර සැලැස්ම</option>
+                <option id="nutritional-benefits">පෝෂණමය ප්‍රතිලාභ</option>
+                <option id="time-savings">කාලය ඉතිරි කිරීම</option>
+                
+                <!-- App Likely Options -->
+                <option id="very-likely">ඉහළ සම්භාවිතාවක් ඇත</option>
+                <option id="likely">සම්භාවිතාවක් ඇත</option>
+                <option id="neutral">උදාසීනයි</option>
+                <option id="unlikely">සම්භාවිතාවක් නැත</option>
+                
+                <!-- Prototype Interest Options -->
+                <option id="yes">ඔව්</option>
+                <option id="maybe">සමහර විට</option>
+                <option id="no">නැත</option>
+            </questions>
+        </language>
+        
+        <language code="tamil">
+            <questions>
+                <question id="age-group">உங்கள் வயது குழு என்ன?</question>
+                <question id="role-selection">உங்கள் வீட்டில் எத்தனை பேர் உள்ளனர்?</question>
+                <question id="income">உங்கள் மாதாந்த வீட்டு வருமானம்  (ரூபாய்)?</question>
+                <question id="veggie-selection">உங்களுக்கு வீட்டினருக்கு பிடித்த காய்கறிகள் (5 தேர்ந்தெடுக்கலாம்)</question>
+                <question id="buying-location">நீங்கள் காய்கறிகளை வளகமாக எங்கு வாங்குவீர்கள்?</question>
+                <question id="purchase-frequency">உங்கள் வீட்டிற்கு எத்தனை முறை புதிய காய்கறிகளை கொள்வனவு செய்வீர்கள்?</question>
+                <question id="spending-amount">உங்கள் வீட்டில் ஒரு வாரத்தில் காய்கறிகளுக்கு சராசரியாக எவ்வளவு செலவு செய்யப்படுகின்றது (ரூபாய்)?</question>
+                <question id="core-problem">பகுதி 1</question>
+                <question id="solution-interest">பகுதி 2</question>
+                <question id="usage-context">பகுதி 3</question>
+                <question id="decision-making">பகுதி 4</question>
+                <question id="prototype-testing">கூடுதல் கேள்வி</question>
+                <question id="open-feedback">உங்கள் பகுதியில் காய்கறிகள் கிடைக்கும் தன்மை, விலை அல்லது தரம் குறித்து வேறு எந்த கருத்துகளும் உள்ளனவா?</question>
+                
+                <!-- Age Group Options -->
+                <option id="under-25">25 க்கு கீழ்</option>
+                <option id="25-35">25 - 35</option>
+                <option id="36-45">36 - 45</option>
+                <option id="46-55">46 - 55</option>
+                <option id="55-plus">55+</option>
+                
+                <!-- Household Size Options -->
+                <option id="1-2">1-2 நபர்கள்</option>
+                <option id="3-4">3-4 நபர்கள்</option>
+                <option id="5-6">5-6 நபர்கள்</option>
+                <option id="6+">6+ நபர்கள்</option>
+                
+                <!-- Income Options -->
+                <option id="less than 50000">50,000 க்கும் குறைவாக</option>
+                <option id="50,000 - 100,000">50,000 - 100,000</option>
+                <option id="100,000 - 150,000">100,000 - 150,000</option>
+                <option id="150,000 - 200,000">150,000 - 200,000</option>
+                <option id="200,000 - 250,000">200,000 - 250,000</option>
+                
+                <!-- Vegetable Names -->
+                <option id="carrot">கேரட்</option>
+                <option id="beetroot">பீட்ரூட் (Beetroot)</option>
+                <option id="red-onion">சின்ன வெங்காயம்</option>
+                <option id="cabbage">கோவா</option>
+                <option id="leeks">லீக்ஸ் (Leeks)</option>
+                <option id="tomato">தக்காளி</option>
+                <option id="brinjal">கத்தரிக்காய்</option>
+                <option id="cucumber">கெக்கரிக்காய்</option>
+                <option id="pumpkin">பூசணிக்காய்</option>
+                <option id="bitter-gourd">பாகற்காய்</option>
+                <option id="okra">வெண்டைக்காய்</option>
+                <option id="beans">போஞ்சி</option>
+                <option id="long-beans">பயத்தங்காய்</option>
+                <option id="green-chili">பச்சை மிளகாய்</option>
+                
+                <!-- Buying Location Options -->
+                <option id="vegetable-market">மக்களுக்கான அரவணிப்பு காய்கறி சந்தை (Dedicated Vegetable Market)</option>
+                <option id="local-fair">உள்ளூர் சந்தை / ஞாயிறு சந்தை</option>
+                <option id="supermarket">சூப்பர் மார்க்கெட்</option>
+                <option id="grocery-store">உள்ளூர் கடை</option>
+                <option id="farmer">விவசாயியிலிருந்து நேரடி வாங்குதல்</option>
+                <option id="online">ஆன்லைன் டெலிவரி சேவைகள்</option>
+                
+                <!-- Purchase Frequency Options -->
+                <option id="daily">தினசரி</option>
+                <option id="2-3-times">வாரத்திற்கு 2-3 முறை</option>
+                <option id="weekly">வாரத்திற்கு ஒரு முறை</option>
+                <option id="less-than-weekly">வாரத்திற்கு ஒரு முறைக்கும் குறைவாக</option>
+                
+                <!-- Spending Amount Options -->
+                <option id="less-than-1000">1,000 க்கும் குறைவாக</option>
+                <option id="1001-2500">1,000 - 2,500</option>
+                <option id="2501-5000">2,500 - 5,000</option>
+                <option id="more-than-5000">5,000 க்கும் அதிகமாக</option>
+                
+                <!-- Page 3 Questions -->
+                <question id="unstable-vege-price">1. எந்த 3-5 காய்கறிகளின் விலைகள் மிகவும் ஒழுங்கற்று அல்லது பிரச்சினையாக இருக்கின்றன?</question>
+                <question id="price-effect">2. காய்கறி விலைகள் எதிர்பாராத முறையில் மாற்றம் அடையும் போது உங்கள் வீட்டு செலவு எவ்வளவு பாத்திப்படையும்?</question>
+                <question id="price-response">3. காய்கறி விலைகள் எதிர்பாராத முறையில் அதிகரிப்பதாக உங்கள் வீட்டினர்  உணர்ந்தால் அதற்கு எப்படி பதில் அளிக்கப்படும்?  (அனைத்தையும் தேர்ந்தெடுக்கலாம்)</question>
+                <question id="budget-difficulty">4. காய்கறி விலைகளின் மாற்றம் உங்கள் வீட்டின் மாதாந்த பட்ஜெட்டை பின்பற்றுவதில் கடினங்களை ஏற்படுத்துகிறதா?</question>
+                <question id="purchase-adjustment">5. காய்கறி விலைகள் எதிர்பாராத வகையில் அதிகரித்தால், உங்கள் வீட்டு கொள்வனவு பழக்கங்களை எவ்வாறு சீர்செய்கின்றது? (உங்களுக்கு பொருந்தும் பதில்களைத் தேர்ந்தெடுக்கவும்)</question>
+
+                <!-- New Option added - by Yasaswini -->
+                <!-- Price Effect Options ??? How is this called -->
+                <option id="always">செமவிடம</option>
+                <option id="frequently">நிதர</option>
+                <option id="sometimes">சமஹரவிட</option>
+                <option id="rarely">கலாதுரகின்</option>
+                <option id="never">கவதாவத் நெத</option> 
+
+                <!-- Price Response Options -->
+                <option id="buy-smaller">குறைந்த அளவு வாங்குவது</option>
+                <option id="switch-cheaper">மலிவான காய்கறிகள் வாங்குவது</option>
+                <option id="reduce-consumption">பயன்பாட்டை குறைப்பது</option>
+                <option id="no-change">எந்த மாற்றமும் இல்லை</option>
+                
+                <!-- Budget Difficulty Options -->
+                <option id="yes-always">ஆம், எப்போதும்</option>
+                <option id="yes-sometimes">ஆம், சில சமயங்களில்</option>
+                <option id="no-manage">இல்லை, என்னால் கையாள முடியும்</option>
+                <option id="no-never">இல்லை, ஒருபோதும் இல்லை</option>
+                
+                <!-- Purchase Adjustment Options -->
+                <option id="cut-back">காய்கறி வாங்குதலை குறைப்பது</option>
+                <option id="spend-less-other">சமநிலைப்படுத்த பிற பொருட்களில் குறைவாக செலவழிதல்</option>
+                <option id="cheaper-alternatives">மலிவான மாற்று பொருட்களை பயன்படுத்தல்</option>
+                <option id="other">மற்றவை</option>
+                
+                <!-- Page 4 Questions -->
+                <question id="price-forecast-useful">6. அடுத்த 7 நாட்களுக்கு காய்கறி விலைகளை கணிப்பது பற்றிய மொபைல் ஆப் அல்லது பிளாட்ஃபாரம் உங்களுக்கு பயனுள்ளதாக இருக்கும் என நீங்கள் நினைக்கிறீர்களா?</question>
+                <question id="budget-recommendation">7. உங்கள் பட்ஜெட் மற்றும் ஊட்டச்சத்து தேவைகளின் அடிப்படையில், காய்கறிகளை வாங்க பரிந்துரைக்கும் ஆப் உங்களுக்கு உபயோகம் தருமா?</question>
+                <question id="recipe-suggestions">8. பருவத்துக்கு ஏற்ற அல்லது மலிவான காய்கறிகளின் அடிப்படையில், சுவையான சமையல் பரிந்துரைகள் உங்களுக்கு பயனுள்ளதாக இருக்குமா?</question>
+                <question id="smartphone-ownership">9. உங்கள் வீட்டில் உணவு சமையல் மற்றும் காய்கறி வாங்கும் முடிவுகளை எடுக்கும் நபர் ஒரு ஸ்மார்ட்போன் அல்லது மொபைல் சாதனத்தை கொண்டுள்ளார்களா?</question>
+                <question id="app-comfort">10. அந்தநபருக்கு மொபைல் ஆப் அல்லது இணையதளத்தைப் பயன்படுத்துவதில் எவ்வளவு வசதி?</question>
+                <question id="decision-factors">11. உங்கள் வீட்டில் காய்கறிகளை வாங்க முடிவு எப்படி எடுக்கப்படுகிறது? (2 தேர்ந்தெடுக்கலாம்)</question>
+                <question id="forecast-useful">12. காய்கறி விலைக் கணிப்புகளை எவ்வளவு நேரம் முன்னதாக அறிந்திருத்தல் பயனுள்ளதாக இருக்கும்?</question>
+                <question id="motivation-factors">13. காய்கறி விலைகளை கணிப்பது மற்றும் சமையல் பரிந்துரைகள் வழங்கும் ஒரு ஆப் பயன்படுத்த விரும்புவதற்கு உங்களை என்ன தூண்டும்? (2 தேர்ந்தெடுக்கலாம்)</question>
+                <question id="app-likely">14. காய்கறி விலைகள், ஊட்டச்சத்து பரிந்துரைகள் மற்றும் சமையல் பரிந்துரைகள் கொண்ட ஒரு இலவச ஆப்பை நீங்கள் எவ்வளவு அளவில் பயன்படுத்த விரும்புகிறீர்கள்?</question>
+                <!-- New Question added - by Yasaswini remove it if you decided to - but this is in the docs -->
+                <question id-"imp-purchase-factor">காய்கறியை வீட்றிற்கு வாங்கும் முடிவை எடுப்பதில் முக்கியமான அம்சமாக அமைவது?</question>
+                <question id="prototype-interest">15. காய்கறி விலைகளை கணிப்பது மற்றும் சமையல் குறிப்புகளை பரிந்துரைக்கும் செயலியை பரிசோதிக்க ஆர்வம் உள்ளதா?</question>
+                
+                <!-- Price Forecast Useful Options -->
+                <option id="very-useful">மிகவும் பயனுள்ளது</option>
+                <option id="useful">பயனுள்ளது</option>
+                <option id="somewhat-useful">ஓரளவு பயனுள்ளது</option>
+                <option id="not-useful">பயனற்றது</option>
+                
+                <!-- Budget Recommendation Options -->
+                <option id="very-interested">மிகவும் பயனுள்ளது</option>
+                <option id="interested">பயனுள்ளது</option>
+                <option id="neutral">ஓரளவு பயனுள்ளது</option>
+                <option id="not-interested">பயனற்றது</option>
+                
+                <!-- Recipe Suggestions Options -->
+                <option id="yes-definitely">மிகவும் பயனுள்ளது</option>
+                <option id="probably">பயனுள்ளது</option>
+                <option id="maybe">ஓரளவு பயனுள்ளது</option>
+                <option id="no">பயனற்றது</option>
+                
+                <!-- Smartphone Ownership Options -->
+                <option id="smartphone">ஆம், ஸ்மார்ட்போன் (Android அல்லது iPhone)</option>
+                <option id="basic-phone">ஆம், அடிப்படை/சாதாரண தொலைபேசி</option>
+                <option id="no-phone">இல்லை, எந்த தொலைபேசியும் இல்லை</option>
+                
+                <!-- App Comfort Options -->
+                <option id="very-comfortable">மிகவும் வசதி</option>
+                <option id="comfortable">வசதி</option>
+                <option id="neutral">நடுநிலை</option>
+                <option id="uncomfortable">வசதி இல்லை</option>
+                
+                <!-- Decision Factors Options -->
+                <option id="current-prices">தற்போதைய விலைகளை அடிப்படையாகக் கொண்டது</option>
+                <option id="family-preferences">குடும்பத்தின் விருப்பங்கள்</option>
+                <option id="nutritional-value">ஊட்டச்சத்து மதிப்பு</option>
+                <option id="seasonal-availability">பருவநிலைக்கேற்ப கிடைப்பனவு</option>
+                <option id="no-specific-plan">திட்டமிடாமல்</option>
+                
+                <!-- Forecast Useful Options -->
+                <option id="1-2-days">1-2 நாட்கள்</option>
+                <option id="3-7-days">3-7 நாட்கள்</option>
+                <option id="1-2-weeks">1-2 வாரங்கள்</option>
+                
+                <!-- Motivation Factors Options -->
+                <option id="saving-money">பணத்தை சேமிப்பது</option>
+                <option id="better-meal-planning">சிறந்த உணவுத் திட்டமிடல்</option>
+                <option id="nutritional-benefits">ஊட்டச்சத்து நன்மைகள்</option>
+                <option id="time-savings">நேர சேமிப்பு</option>
+                
+                <!-- App Likely Options -->
+                <option id="very-likely">மிகவும் விரும்புகிறேன்</option>
+                <option id="likely">விரும்புகிறேன்</option>
+                <option id="neutral">நடுநிலை</option>
+                <option id="unlikely">விரும்பவில்லை</option>
+                
+                <!-- Prototype Interest Options -->
+                <option id="yes">ஆம்</option>
+                <!-- <option id="maybe">இருக்கலாம்</option> -->
+                <option id="no">இல்லை</option>
+
+                <!-- New Question added Options - by Yasaswini remove it if you decided to - but this is in the docs -->
+                <!-- Important Purchase Factor Options -->
+                <option id="price-ipf">விலை</option>
+                <option id="quality-ipf">தரம்</option>
+                <option id="behviour-ipf">பழக்க வழக்கம்</option>
+                <option id="nutrition-ipf">ஊட்டச்சத்து மதிப்பு</option>
+                <option id="availability-ipf">கிடைப்பனவு</option>
+
+            </questions>
+        </language>
+    </languages>
+</survey>
