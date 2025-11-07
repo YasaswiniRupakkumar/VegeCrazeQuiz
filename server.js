@@ -73,9 +73,13 @@ const surveyResponseSchema = new mongoose.Schema({
 
 const SurveyResponse = mongoose.model('SurveyResponse', surveyResponseSchema);
 
-// Routes
+// // Routes
+// app.get('/', (req, res) => {
+//   res.sendFile('index.html', { root: __dirname }); // Serve index.html from the root directory
+// });
+// Serve the index.html correctly
 app.get('/', (req, res) => {
-  res.sendFile('index.html', { root: __dirname }); // Serve index.html from the root directory
+  res.sendFile(path.join(__dirname, 'index.html')); // Correctly join the path to the index.html file
 });
 
 // Submit survey response
@@ -197,6 +201,7 @@ app.listen(PORT, () => {
   console.log(`🌱 The Great Veggie Survey API is ready!`);
 
 });
+
 
 
 
