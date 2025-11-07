@@ -15,6 +15,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Serve static files (like index.html)
+app.use(express.static('public'));
+
 // MongoDB Connection - USE YOUR ACTUAL CONNECTION STRING HERE!
 const MONGODB_URI = 'mongodb+srv://Vercel-Admin-vege-craze-quiz:qRw8LobYdMjUgnIe@vege-craze-quiz.ogmajx4.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(MONGODB_URI, {
@@ -196,3 +199,4 @@ app.listen(PORT, () => {
   console.log(`🌱 The Great Veggie Survey API is ready!`);
 
 });
+
