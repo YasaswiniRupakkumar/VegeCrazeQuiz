@@ -469,7 +469,7 @@
                 <question id="motivation-factors">13. காய்கறி விலைகளை கணிப்பது மற்றும் சமையல் பரிந்துரைகள் வழங்கும் ஒரு ஆப் பயன்படுத்த விரும்புவதற்கு உங்களை என்ன தூண்டும்? (2 தேர்ந்தெடுக்கலாம்)</question>
                 <question id="app-likely">14. காய்கறி விலைகள், ஊட்டச்சத்து பரிந்துரைகள் மற்றும் சமையல் பரிந்துரைகள் கொண்ட ஒரு இலவச ஆப்பை நீங்கள் எவ்வளவு அளவில் பயன்படுத்த விரும்புகிறீர்கள்?</question>
                 <!-- New Question added - by Yasaswini remove it if you decided to - but this is in the docs -->
-                <question id-"imp-purchase-factor">காய்கறியை வீட்றிற்கு வாங்கும் முடிவை எடுப்பதில் முக்கியமான அம்சமாக அமைவது?</question>
+                <question id="imp-purchase-factor">காய்கறியை வீட்றிற்கு வாங்கும் முடிவை எடுப்பதில் முக்கியமான அம்சமாக அமைவது?</question>
                 <question id="prototype-interest">15. காய்கறி விலைகளை கணிப்பது மற்றும் சமையல் குறிப்புகளை பரிந்துரைக்கும் செயலியை பரிசோதிக்க ஆர்வம் உள்ளதா?</question>
                 
                 <!-- Price Forecast Useful Options -->
@@ -541,4 +541,5 @@
             </questions>
         </language>
     </languages>
+
 </survey>
