@@ -3,11 +3,17 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';  // Import fileURLToPath
+import path from 'path';              // Import path
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+// Get the directory name dynamically
+const __filename = fileURLToPath(import.meta.url); // Get the filename
+const __dirname = path.dirname(__filename);         // Get the directory name
 
 // Middleware
 app.use(helmet());
@@ -191,6 +197,7 @@ app.listen(PORT, () => {
   console.log(`🌱 The Great Veggie Survey API is ready!`);
 
 });
+
 
 
 
