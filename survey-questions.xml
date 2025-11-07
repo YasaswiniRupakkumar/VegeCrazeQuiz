@@ -434,11 +434,11 @@
 
                 <!-- New Option added - by Yasaswini -->
                 <!-- Price Effect Options ??? How is this called -->
-                <option id="always">செமவிடம</option>
-                <option id="frequently">நிதர</option>
-                <option id="sometimes">சமஹரவிட</option>
-                <option id="rarely">கலாதுரகின்</option>
-                <option id="never">கவதாவத் நெத</option> 
+                <option id="always">எப்பொழுதும்</option>
+                <option id="frequently">அடிக்கடி</option>
+                <option id="sometimes">சில சமயங்களில்</option>
+                <option id="rarely">அரிதாக</option>
+                <option id="never">ஒருபோதும் இல்ல</option> 
 
                 <!-- Price Response Options -->
                 <option id="buy-smaller">குறைந்த அளவு வாங்குவது</option>
@@ -543,3 +543,4 @@
     </languages>
 
 </survey>
+
