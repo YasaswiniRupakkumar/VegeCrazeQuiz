@@ -963,8 +963,13 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('selectionProgressUnstable').style.width = '0%';
             document.getElementById('selectionProgressUnstable').style.background = 'linear-gradient(90deg, #ffa726, #ff9800)';
 
-            let selectedCount = 0;
-            let selectedCountUnstable = 0;
+            selectedCount = 0;
+            selectedCountUnstable = 0;
+            selectedCountEl = 0;
+            selectionProgressEl = 0;
+            otherContainer = '';
+            otherInput = '';
+            prevOtherValue = '';
         });
     }
 
@@ -1018,6 +1023,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupCardSelections();
 });
+
 
 
 
