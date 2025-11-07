@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update UI with selected language
     function updateSurveyLanguage(language) {
-        currentLanguage = language;
+        currentLanguage = language.toLowerCase();
         const langData = surveyQuestions[language];
         
         if (!langData) {
@@ -1014,5 +1014,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupCardSelections();
 });
+
 
 
