@@ -68,16 +68,21 @@ const surveyResponseSchema = new mongoose.Schema({
 const SurveyResponse = mongoose.model('SurveyResponse', surveyResponseSchema);
 
 // Routes
+// app.get('/', (req, res) => {
+//   res.json({ 
+//     message: '🌱 The Great Veggie Survey API is running!',
+//     version: '1.0.0',
+//     endpoints: {
+//       submit: 'POST /api/submit',
+//       responses: 'GET /api/responses',
+//       stats: 'GET /api/stats'
+//     }
+//   });
+// });
+
+// Routes
 app.get('/', (req, res) => {
-  res.json({ 
-    message: '🌱 The Great Veggie Survey API is running!',
-    version: '1.0.0',
-    endpoints: {
-      submit: 'POST /api/submit',
-      responses: 'GET /api/responses',
-      stats: 'GET /api/stats'
-    }
-  });
+  res.sendFile('index.html', { root: 'public' }); // Serve index.html explicitly
 });
 
 // Submit survey response
@@ -199,4 +204,5 @@ app.listen(PORT, () => {
   console.log(`🌱 The Great Veggie Survey API is ready!`);
 
 });
+
 
