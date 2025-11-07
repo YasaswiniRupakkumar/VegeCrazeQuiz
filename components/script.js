@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const languages = xmlDoc.getElementsByTagName('language');
                 for (let lang of languages) {
                     const langCode = lang.getAttribute('code');
+                    console.log(langCode, 'passed');
                     surveyQuestions[langCode] = {};
                     
                     // Parse questions
@@ -1014,6 +1015,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupCardSelections();
 });
+
 
 
 
