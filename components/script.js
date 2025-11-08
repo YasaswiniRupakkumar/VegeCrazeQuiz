@@ -970,6 +970,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hiddenCheckboxes = null;
             unstableCheckboxes = null;
             selectedCount = 0;
+            selectedCountUnstable = 0;
         });
     }
 
@@ -1023,6 +1024,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupCardSelections();
 });
+
 
 
 
