@@ -971,6 +971,12 @@ document.addEventListener('DOMContentLoaded', () => {
             unstableCheckboxes = null;
             selectedCount = 0;
             selectedCountUnstable = 0;
+
+            if (nextButton4) {
+                // Note: You might want to pull "Submit" from your XML if it's translated
+                nextButton4.textContent = 'Submit';
+                nextButton4.disabled = false;
+            }
         });
     }
 
@@ -1024,6 +1030,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupCardSelections();
 });
+
 
 
 
