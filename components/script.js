@@ -966,7 +966,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('selectionProgressUnstable').style.width = '0%';
             document.getElementById('selectionProgressUnstable').style.background = 'linear-gradient(90deg, #ffa726, #ff9800)';
 
-            hiddenCheckboxes = none;
+            hiddenCheckboxes = null;
             selectedCount = 0;
         });
     }
@@ -1021,6 +1021,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupCardSelections();
 });
+
 
 
 
