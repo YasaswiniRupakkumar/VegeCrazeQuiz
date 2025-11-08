@@ -963,8 +963,15 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('selectionProgressUnstable').style.width = '0%';
             document.getElementById('selectionProgressUnstable').style.background = 'linear-gradient(90deg, #ffa726, #ff9800)';
 
-            // setupEnhancedVeggieSelection();
-            // setupUnstableVeggieSelection();
+            // --- UPDATED PART ---
+            // Now, just call your new functions to reset the card UI.
+            // This runs *after* surveyForm.reset() has cleared the checkboxes.
+            resetFavoriteVeggieCards();
+            resetUnstableVeggieCards();
+            
+            // We don't need to re-run the setup functions (like setupEnhancedVeggieSelection)
+            // because the event listeners they added are still active.
+            // We just needed to reset the visual state.
         });
     }
 
@@ -1016,8 +1023,68 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ... (This is after your setupCardSelections function definition) ...
+
+    /**
+     * Resets the visual state of the favorite vegetable selection grid.
+     * Clears selected classes, resets the counter, progress bar, and
+     * ensures the "Other" input container is visible.
+     */
+    function resetFavoriteVeggieCards() {
+        console.log('Resetting favorite veggie cards...');
+        
+        // Reset enhanced vegetable selection UI
+        // Use the same selector as setupEnhancedVeggieSelection to target the right cards
+        const veggieCards = document.querySelectorAll('#veggie-selection .veggie-card:not(.unstable)');
+        veggieCards.forEach(card => {
+            card.classList.remove('selected');
+        });
+        
+        const selectedCountEl = document.getElementById('selectedCount');
+        if (selectedCountEl) selectedCountEl.textContent = '0';
+        
+        const selectionProgressEl = document.getElementById('selectionProgress');
+        if (selectionProgressEl) {
+            selectionProgressEl.style.width = '0%';
+            selectionProgressEl.style.background = 'linear-gradient(90deg, #4CAF50, #45a049)';
+        }
+
+        // Ensure the "Other" container is visible again
+        const otherContainer = document.querySelector('.other-veggie-input');
+        if (otherContainer) {
+            otherContainer.style.display = '';
+        }
+        
+        // Note: The actual <input> value for "Other" is cleared 
+        // by the surveyForm.reset() call.
+    }
+
+    /**
+     * Resets the visual state of the unstable vegetable selection grid.
+     * Clears selected classes, resets the counter, and progress bar.
+     */
+    function resetUnstableVeggieCards() {
+        console.log('Resetting unstable veggie cards...');
+
+        // Reset unstable vegetable selection UI
+        const unstableCards = document.querySelectorAll('.veggie-card.unstable');
+        unstableCards.forEach(card => {
+            card.classList.remove('selected');
+        });
+
+        const selectedCountEl = document.getElementById('selectedCountUnstable');
+        if (selectedCountEl) selectedCountEl.textContent = '0';
+
+        const selectionProgressEl = document.getElementById('selectionProgressUnstable');
+        if (selectionProgressEl) {
+            selectionProgressEl.style.width = '0%';
+            selectionProgressEl.style.background = 'linear-gradient(90deg, #ffa726, #ff9800)';
+        }
+    }
+
     setupCardSelections();
 });
+
 
 
 
