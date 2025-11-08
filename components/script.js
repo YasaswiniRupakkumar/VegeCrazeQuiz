@@ -46,6 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressBar = document.getElementById('progress');
     const surveyForm = document.getElementById('surveyForm');
 
+    // Initialize selection state
+    let selectedCount = 0;
+
     // Store for XML data
     let surveyQuestions = {};
     let currentLanguage = 'english';
@@ -292,8 +295,8 @@ document.addEventListener('DOMContentLoaded', () => {
             veggieMap.set(checkbox.value, checkbox);
         });
 
-        // Initialize selection state
-        let selectedCount = 0;
+        // // Initialize selection state
+        // let selectedCount = 0;
 
         // Update visual indicators
         function updateSelectionUI() {
@@ -964,6 +967,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('selectionProgressUnstable').style.background = 'linear-gradient(90deg, #ffa726, #ff9800)';
 
             hiddenCheckboxes = none;
+            selectedCount = 0;
         });
     }
 
@@ -1017,6 +1021,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupCardSelections();
 });
+
 
 
 
