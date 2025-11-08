@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const maxUnstableSelections = 5;
     
     const veggieCards = document.querySelectorAll('#veggie-selection .veggie-card:not(.unstable)');
-    const hiddenCheckboxes = document.querySelectorAll('input[name="favoriteVeggie"]');
+    let hiddenCheckboxes = document.querySelectorAll('input[name="favoriteVeggie"]');
     const decisionCheckboxes = document.querySelectorAll('#decision-making input[name="decisionFactors"]');
     const motivationCheckboxes = document.querySelectorAll('#decision-making input[name="motivationFactors"]');
 
@@ -1021,6 +1021,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupCardSelections();
 });
+
 
 
 
