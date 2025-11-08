@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // definitions for unstable cards / checkboxes
     const unstableCards = document.querySelectorAll('.veggie-card.unstable');
-    const unstableCheckboxes = document.querySelectorAll('input[name="unstableVeggie"]');
+    let unstableCheckboxes = document.querySelectorAll('input[name="unstableVeggie"]');
     
     const veggieLimitMessage = document.getElementById('veggie-limit-message');
     const decisionLimitMessage = document.getElementById('decision-limit-message');
@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize selection state
     let selectedCount = 0;
+    let selectedCountUnstable = 0;
 
     // Store for XML data
     let surveyQuestions = {};
@@ -429,20 +430,20 @@ document.addEventListener('DOMContentLoaded', () => {
             unstableMap.set(veggieName, checkbox);
         });
         
-        // Initialize selection state
-        let selectedCount = 0;
+        // // Initialize selection state
+        // let selectedCount = 0;
 
         // Update visual indicators
         function updateSelectionUI() {
-            if (selectedCountEl) selectedCountEl.textContent = selectedCount;
+            if (selectedCountEl) selectedCountEl.textContent = selectedCountUnstable;
             if (selectionProgressEl) {
-                const progressPercent = (selectedCount / maxUnstableSelections) * 100;
+                const progressPercent = (selectedCountUnstable / maxUnstableSelections) * 100;
                 selectionProgressEl.style.width = `${progressPercent}%`;
                 
                 // Color coding based on selection count
-                if (selectedCount < minUnstableSelections) {
+                if (selectedCountUnstable < minUnstableSelections) {
                     selectionProgressEl.style.background = 'linear-gradient(90deg, #ffa726, #ff9800)'; // Orange
-                } else if (selectedCount >= minUnstableSelections && selectedCount <= maxUnstableSelections) {
+                } else if (selectedCountUnstable >= minUnstableSelections && selectedCount <= maxUnstableSelections) {
                     selectionProgressEl.style.background = 'linear-gradient(90deg, #4CAF50, #45a049)'; // Green
                 } else {
                     selectionProgressEl.style.background = 'linear-gradient(90deg, #ff6b6b, #ff5252)'; // Red
@@ -461,16 +462,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Deselect
                     checkbox.checked = false;
                     card.classList.remove('selected');
-                    selectedCount = Math.max(0, selectedCount - 1);
+                    selectedCountUnstable = Math.max(0, selectedCountUnstable - 1);
                 } else {
                     // Select if under max limit
-                    if (selectedCount >= maxUnstableSelections) {
+                    if (selectedCountUnstable >= maxUnstableSelections) {
                         showPopup(`You can only select up to ${maxUnstableSelections} vegetables for unstable prices.`);
                         return;
                     }
                     checkbox.checked = true;
                     card.classList.add('selected');
-                    selectedCount++;
+                    selectedCountUnstable++;
                 }
 
                 updateSelectionUI();
@@ -489,12 +490,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Initialize from existing selections
         function initializeUnstableSelection() {
-            selectedCount = 0;
+            selectedCountUnstable = 0;
             // use unstableCheckboxes NodeList to detect pre-checked items
             const checkboxes = document.querySelectorAll('input[name="unstableVeggie"]');
             checkboxes.forEach(checkbox => {
                 if (checkbox.checked) {
-                    selectedCount++;
+                    selectedCountUnstable++;
                     const card = document.querySelector(`.veggie-card.unstable[data-veggie="${checkbox.value}"]`);
                     if (card) card.classList.add('selected');
                 }
@@ -506,11 +507,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Expose validation function
         window.validateUnstableSelection = function() {
-            if (selectedCount < minUnstableSelections) {
+            if (selectedCountUnstable < minUnstableSelections) {
                 showPopup(`Please select at least ${minUnstableSelections} vegetables for unstable prices.`);
                 return false;
             }
-            if (selectedCount > maxUnstableSelections) {
+            if (selectedCountUnstable > maxUnstableSelections) {
                 showPopup(`You can only select up to ${maxUnstableSelections} vegetables for unstable prices.`);
                 return false;
             }
@@ -967,6 +968,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('selectionProgressUnstable').style.background = 'linear-gradient(90deg, #ffa726, #ff9800)';
 
             hiddenCheckboxes = null;
+            unstableCheckboxes = null;
             selectedCount = 0;
         });
     }
@@ -1021,6 +1023,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupCardSelections();
 });
+
 
 
 
