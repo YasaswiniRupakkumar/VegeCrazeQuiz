@@ -44,7 +44,7 @@ const surveyResponseSchema = new mongoose.Schema({
   ageGroup: { type: String, required: true },
   membersinfamily: { type: String, required: true },
   income: { type: String, required: true },
-  favoriteVeggie: [{ type: String, required: true }],
+  favoriteVeggie: [{ type: String}],
   
   // Page 2 - Shopping Habits
   buyingLocation: { type: String, required: true },
@@ -206,6 +206,7 @@ app.listen(PORT, () => {
   console.log(`🌱 The Great Veggie Survey API is ready!`);
 
 });
+
 
 
 
